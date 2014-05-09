@@ -1,0 +1,27 @@
+*~
+
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.scala_dependencies
+
+# idea
+.idea
+*.iml
+
+db
+eclipse
+lib
+log
+logs
+modules
+precompiled
+project/project
+target/
+tmp
+test-result
+server.pid
+*.iml
+*.eml

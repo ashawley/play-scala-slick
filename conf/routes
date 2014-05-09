@@ -1,0 +1,8 @@
+GET     /                           controllers.App.index
+GET     /json                       controllers.App.json
+GET     /xml                        controllers.App.xml
+GET     /category                   controllers.Category.list
+GET     /category/:name             controllers.Category.get(name: String)
+GET     /recipe                     controllers.Recipe.list
+GET     /recipe/:id                 controllers.Recipe.get(id: Int)
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
