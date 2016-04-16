@@ -6,7 +6,7 @@ import play.api.libs.json._
 
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 
-object Recipe extends Controller {
+class Recipe extends Controller {
 
   val recipeModel = new models.Recipe {}
 

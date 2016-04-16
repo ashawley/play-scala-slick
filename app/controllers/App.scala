@@ -6,7 +6,7 @@ import play.api.libs.json._
 
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 
-object App extends Controller {
+class App extends Controller {
 
   implicit val jsonWrites = new Writes[Map[String, Any]] {
     def writes(json: Map[String, Any]) = Json.obj(

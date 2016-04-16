@@ -6,7 +6,7 @@ import play.api.libs.json._
 
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 
-object Category extends Controller {
+class Category extends Controller {
 
   val categoryModel = new models.Category {}
 
