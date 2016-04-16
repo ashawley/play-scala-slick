@@ -2,14 +2,16 @@ name := "categorizer"
 
 version := "1.0.0-SNAPSHOT"
 
+scalaVersion  := "2.11.8"
+
 libraryDependencies ++= List(
-  "org.json4s" %% "json4s-native" % "3.2.9",
-  "org.json4s" %% "json4s-jackson" % "3.2.9",
-  "com.typesafe.slick" %% "slick" % "2.0.1",
-  "mysql" % "mysql-connector-java" % "5.1.24",
-  "com.h2database" % "h2" % "1.3.176"
+  "org.json4s" %% "json4s-native" % "3.3.0",
+  "org.json4s" %% "json4s-jackson" % "3.3.0",
+  "com.typesafe.slick" %% "slick" % "3.1.1",
+  "mysql" % "mysql-connector-java" % "5.1.38",
+  "com.h2database" % "h2" % "1.4.191"
 )
 
-playScalaSettings
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalariformSettings
